@@ -1,0 +1,49 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:EvidentProof.UserControls">
+    
+    <Color x:Key="DefaultColor">#1A7AC0</Color>
+    <SolidColorBrush x:Key="DefaultColorBrush" Color="{StaticResource DefaultColor}"></SolidColorBrush>
+    
+    <Style x:Key="TitleLableStyle" TargetType="Label">
+        <Setter Property="Foreground" Value="{StaticResource DefaultColorBrush}"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="TextBlockHeader" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource DefaultColorBrush}"/>
+        <Setter Property="Margin" Value="15 0 0 5"/>
+    </Style>
+
+    <Style x:Key="TextBoxWithHintStyle" TargetType="local:TextBoxWithHint">
+        <Setter Property="Margin" Value="0 0 0 5"/>
+    </Style>
+
+    <Style x:Key="CheckBoxStyle" TargetType="CheckBox">
+        <Setter Property="Foreground" Value="{StaticResource DefaultColorBrush}"/>
+        <Setter Property="BorderBrush" Value="LightGray"/>
+    </Style>
+
+    <Style x:Key="ClickHereButtonStyle" TargetType="Button">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="{StaticResource DefaultColorBrush}"/>
+        <Setter Property="Width" Value="200"/>
+        <Setter Property="Height" Value="30"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="13"/>
+    </Style>
+
+    <Style x:Key="ExistingUserTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{StaticResource DefaultColorBrush}"/>
+    </Style>
+
+    <Style x:Key="OfferLabelStyle" TargetType="Label">
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Foreground" Value="LightGray"/>
+    </Style>
+</ResourceDictionary>
